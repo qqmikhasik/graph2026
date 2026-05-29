@@ -42,7 +42,7 @@ int main(int argc, char* argv[]) {
 
   /* Сюда нужно вставить вызов набора тестов для алгоритма. */
 
-
+  TestHungarianAlgorithm(&cli);
 
   /* Конец вставки. */
 

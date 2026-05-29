@@ -32,7 +32,12 @@ void TestWeightedOrientedGraph();
 
 /* Сюда нужно добавить объявления тестовых функций. */
 
-
+/**
+ * @brief Набор тестов для венгерского алгоритма.
+ *
+ * @param cli Указатель на HTTP клиент.
+ */
+void TestHungarianAlgorithm(httplib::Client* cli);
 
 /* Конец вставки. */
 

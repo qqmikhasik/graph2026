@@ -110,10 +110,12 @@ include_directories(${GRAPH_INCLUDE_DIRS})
 add_executable(
   graph_server
   include/graph.hpp
+  include/hungarian_algorithm.hpp
   include/iterators.hpp
   include/oriented_graph.hpp
   include/weighted_graph.hpp
   include/weighted_oriented_graph.hpp
+  methods/hungarian_algorithm_method.cpp
   methods/main.cpp
   methods/methods.hpp
 )
@@ -136,11 +138,13 @@ target_link_libraries(graph_server ${GRAPH_LIBS})
 add_executable(
   graph_test
   include/graph.hpp
+  include/hungarian_algorithm.hpp
   include/iterators.hpp
   include/oriented_graph.hpp
   include/weighted_graph.hpp
   include/weighted_oriented_graph.hpp
   tests/graph_test.cpp
+  tests/hungarian_algorithm_test.cpp
   tests/io.hpp
   tests/main.cpp
   tests/oriented_graph_test.cpp
